@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- manrope font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Assignment 3 b11</title>
     
            <!-- font-awesome -->
            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+           <!-- font family -->
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     
           <!--  daisy-UI cdn -->
           <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -46,13 +50,13 @@
       }
     </script>
 </head>
-<body class="">
+<body class="sora-regular">
     <header class="">
       <nav class="bg-nav-bg md:px-[100px] items-center">
         <div class="navbar">
             <div class="navbar-start flex">
               <img src="./c1-assets/logo-header.png" alt="">
-            <h1 class="text-black font-extrabold ml-[10px] hidden md:block text-3xl">Browse4Pets</h1>
+            <h1 class="text-black font-extrabold ml-[10px] hidden md:block text-3xl adlam-display-regular">Browse4Pets</h1>
             </div>
             <div class="navbar-center hidden lg:flex md:hidden">
               <ul class="menu menu-horizontal px-1">
@@ -100,16 +104,18 @@
     </nav>
     <!-- banner contain -->
       <div class="md:w-[80%] mx-auto  mt-12 space-y-5 relative">
-        <h1 class="text-5xl font-bold w-2/3 adlam-display-regular">Pamper Your Pet, Because They Deserve the Bes</h1>
-        <p class="w-2/3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+        <div class="absolute">
+          <h1 class="md:text-5xl font-bold w-2/3 adlam-display-regular">Pamper Your Pet, Because They Deserve the Bes</h1>
+        <p class="md:w-2/3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
         <button class="py-2 px-5 bg-[#FFDC26] rounded-md font-medium ">Find a pet</button>
-        <img class="-mt-100" src="./c1-assets/cat-big.png" alt="">
+        </div>
+        <div class="pt-24 md:pt-0"><img class=" " src="./c1-assets/cat-big.png" alt=""></div>
       </div>
     </header>
     <main class="">
       <!-- section categories -->
        <section class="my-12 md:w-[80%] mx-auto">
-        <h4 class="text-4xl font-bold">Browse By Categories</h4>
+        <h4 class="text-4xl adlam-display-regular font-bold">Browse By Categories</h4>
         <div class="py-10 grid md:grid-cols-6 grid-cols-2  gap-5">
           <div class="card bg-base-100 w-[160px] h-[220px] bg-comon shadow-xl">
             <figure class="px-10 pt-10">
@@ -189,113 +195,139 @@
         <section class="bg-nav-bg md:px-[100px] md:py-[60px]">
           <h4 class="text-4xl mb-5 font-bold">Trending Pet Products</h4>
           <div class="md:flex gap-6">
-            <div class="bg-comon p-6 md:w-2/5 space-y-3 rounded-lg">
+            <div class="bg-comon p-6 md:w-2/5 space-y-3 rounded-lg relative">
+             <div class="absolute space-y-3">
               <h5 class="text-2xl font-bold">T- Shirt For Dogs</h5>
               <p>Discover the best Dog Shirts in Best Sellers. Find the top 100 most popular items in Amazon Pet Supplies Best Sellers.</p>
               <button class="py-2 px-5 bg-white rounded-md font-medium ">Find a pet</button>
-              <img class=" md:ml-[150px] -mt-[150px]" src="./c1-assets/cute-pet-small.png" alt="">
+             </div>
+             <div class="">
+              <img class="ml-[80px] mt-10 md:ml-[150px]  relative" src="./c1-assets/cute-pet-small.png" alt="">
+             </div>
             </div>
 
-            <div class="space-y-4 gap-4 px-3 md:gap-8 grid md:grid-cols-3 md:grid-rows-3 grid-cols-2 ">
+            <div class=" gap-4 px-3 md:gap-8 grid md:grid-cols-3  grid-cols-2 mt-6">
 
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+              <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
                 </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-               <div>
-                <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
+               <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
                 </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
-                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
-                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
-                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
-                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
-                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 border rounded-md bg-white">
-                <div>
-                  <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
-                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
-                </div>
-              </div>
-              <div class="flex gap-4 p-3 hidden md:block border rounded-md bg-white">
-               <div>
-                <img class="bg-nav-bg p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
                </div>
-                <div>
-                  <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
-                  <p>Ped Bed</p>
-                  <p>$ 39.99</p>
+               <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
                 </div>
-              </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
+              <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
+               <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
+               <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
+               <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
+               <div class="flex gap-4 p-3 border rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
+               <div class="md:flex gap-4 p-3 border hidden md:block rounded-md bg-white h-fit">
+                <div class="w-[40%]">
+                 <img class="bg-nav-bg p-4 w-full rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+                </div>
+                 <div class="w-[60%]">
+                   <span><i class="fa-solid text-orange-400 fa-star"></i> 4.5</span>
+                   <p>Ped Bed</p>
+                   <p>$ 39.99</p>
+                 </div>
+               </div>
             </div>
           </div>
         </section>
         <!-- price section -->
-         <section>
+         <section class=" md:px-[100px] md:py-[60px] py-11">
           <h4 class="text-4xl font-bold">Everyday low Price</h4>
-
+          <div class="md:flex h-[400px] mt-8 gap-8">
+            <div class="md:flex items-center rounded-lg md:w-[60%] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] ">
+              <div class="space-y-3 p-6">
+                <p class="hidden md:block">Under Price</p>
+                <p class="font-extrabold ">Pet Grooming Mitt</p>
+                <p class="text-white hidden md:block">(Easy Hair Removal)</p>
+                <h1 class="text-5xl font-bold text-white md:text-black">$7.99</h1>
+              </div>
+              <div>
+                <img class="w-[300px] " src="./c1-assets/cute-dog-mid.png" alt="">
+              </div>
+            </div>
+            <div class="relative rounded-lg my-8 md:mt-0 md:w-[40%] p-10 bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] ">
+              <div class="absolute space-y-3 mt-12">
+                <p>T-Shirt for Dogs</p>
+                <h1 class="font-bold text-5xl text-comon">$7.99</h1>
+              </div>
+              <div class="ml-[100px] mt-10">
+                <img src="./c1-assets/cute-pet-small.png" alt="">
+              </div>
+            </div>
+          </div>
          </section>
+         
     </main>
 </body>
 </html>
